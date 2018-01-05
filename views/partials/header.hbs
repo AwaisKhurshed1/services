@@ -1,0 +1,28 @@
+<nav class="fh5co-nav-style-1 navbar navbar-inverse navbar-fixed-top sticky" role="navigation" data-offcanvass-position="fh5co-offcanvass-left">
+    <div class="container header-movable">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 fh5co-logo">
+            <a href="#" class="js-fh5co-mobile-toggle fh5co-nav-toggle"><i></i></a>
+            {{#if loggedin}}
+                <a href="/index">Logo</a>
+            {{else}}
+                <a href="#">Logo</a>
+            {{/if}}
+        </div>
+        <div class="col-lg-3 col-md-2 col-sm-2 text-center fh5co-link-wrap">
+
+        </div>
+        <div class="col-lg-6 col-md-7 col-sm-7 text-right fh5co-link-wrap">
+            <ul class="fh5co-special" data-offcanvass="yes">
+                {{#if loggedin}}
+                    <li><a href="/index" class="text-color-header">{{name}}</a></li>
+                    <li><a href="/user/signout" class="call-to-action header-class-font">Sign Out</a></li>
+                {{else}}
+                    <li><a href="#" class="call-to-action header-class-font">Become a Seller</a></li>
+                    <li><a href="/user/signin" class="call-to-action header-class-font">Sign In</a></li>
+                    <li><a href="/user/signup" class="call-to-action header-class-font">Join</a></li>
+                {{/if}}
+            </ul>
+        </div>
+    </div>
+</nav>
+

@@ -1,0 +1,44 @@
+/**
+File Added By Awais Khurshed
+For all the customized CSS
+ */
+
+/*
+Started
+Added By Awais Khurshed
+For Header
+ */
+.header-class-font{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.sign-in-text{
+    font-size: xx-large;
+}
+
+
+.sticky {
+    position: sticky;
+   /* top: 10px; /* When the element reaches top: 10px, it becomes fixed. */
+    z-index: 100;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    margin-bottom: 0px;
+
+}
+
+.header-movable{
+    padding-top: 15px;
+}
+
+.text-color-header{
+    color: darkgray !important;
+    font-weight: bold !important;
+}
+
+/*
+Ended
+Added By Awais Khurshed
+For Header
+ */

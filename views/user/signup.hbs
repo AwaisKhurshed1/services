@@ -1,0 +1,42 @@
+<div class="fh5co-cover fh5co-cover-style-2 js-full-height" data-stellar-background-ratio="0.5" data-next="yes" style="background-image: url(../public/images/img_same_dimension_1.jpg);">
+    <span class="scroll-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.4s">
+        <a href="#">
+            <span class="mouse"><span></span></span>
+        </a>
+    </span>
+    <div class="fh5co-overlay"></div>
+    <div class="fh5co-cover-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-9 col-xs-9 full-height js-full-height">
+                    <div class="fh5co-cover-intro">
+                        <h1 class="cover-text-lead wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Join</h1>
+                        <form action="/user/signup" method="post">
+                            {{# if hasErrors}}
+                            <div class="alert alert-danger">
+                                {{#each messages}}
+                                <p>{{this}}</p>
+                                {{/each}}
+                            </div>
+                            {{/if}}
+                            <div class="form-group">
+                                <label for="nickname">Nick Name</label>
+                                <input name="nickname" id="nickname" class="form-control" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input name="email" id="email" class="form-control" type="email" />
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input name="password" id="password" class="form-control" type="password" />
+                            </div>
+                            <input type="hidden" name="_csrf" value="{{csrfToken}}" />
+                            <button class="btn btn-success" type="submit">Join Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
